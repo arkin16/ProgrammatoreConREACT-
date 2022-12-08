@@ -1,18 +1,20 @@
 /* IMPOSTAZIONI GENERALI */
 
-.container{
-    font-size: 1em;
-    line-height: 1.2em;
-    background-color: #ffffff;
-    /* background-image: url("../img/sfondo.png"); */
-    text-align: center; 
-}
 
 body{
     font-family: Poppins;
-    padding: 1em;
+     
+    background-image: url("../img/sfondo.png");
+    text-align: center;
+    
 }
 
+.container{
+    font-size: 1em;
+    line-height: 1.2em;
+    padding: 0.5em; 
+    box-sizing: content-box;
+}
 hr{
     display: none;
 }
@@ -38,7 +40,8 @@ header img{
     margin-bottom:0.9em;
 
 }
-.imagLogo{
+
+header div .imagLogo{
     filter: brightness(0) invert(1);
 }
 
@@ -67,19 +70,67 @@ header nav ul li a,i{
 main{
     width: 80%;
     margin: 1em auto;
-    padding: 1.5em;
+    padding: 1.7em;
     background-color: #ffffff;
     border: 2px solid #000000;
     box-sizing: border-box;
     line-height: 1.4em;
-    text-align: left;
 }
+
+h1 {
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.4em;
+    padding:0.5em 0em;
+}
+
+p p:not(p:nth-of-type(2)){
+    margin:0em 0.5em;
+    padding: 0.2em 0em;
+}
+
 /* ELEMENTI NEL MAIN - ARTICLE */
 
+article p:not(.pSinistra){
+    width: 100%;
+    margin: 0em auto;
+    text-align:center;
+    /* box-sizing: border-box; */
+}
+
+article .pSinistra{
+    padding: 0.5em;
+    text-align:right;
+    
+}
+
+article ul,ol {
+    width: 85%;
+    margin: 1em auto;
+    padding: 0.5em ; 
+}
+
 /* TABELLE */
-
+caption {
+    font-size: 1.4em;
+    padding: 0.5em 0em;
+    
+}
 /* FORM */
-
+section {
+    background-color: #e6e6e6cc;
+    margin:1em 1em;
+    /* margin-bottom: -0.5em; */
+    padding : 2em;
+    border: 2px solid  #C2C2C2;
+    box-sizing: content-box;
+}
 /* ELEMENTI NELL' ASIDE */
 
 aside div{
@@ -95,7 +146,7 @@ aside div{
 /* FOOTER */
 footer{
     width: 80%;
-    margin: 0em auto;
+    margin: 0.5em auto;
     padding: 0 1em;
     background: rgb(0,142,182);
     background: linear-gradient(180deg, rgba(0,142,182,1) 10%, rgba(0,85,102,1) 46%, rgba(0,0,0,1) 88%); 

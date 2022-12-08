@@ -1,0 +1,58 @@
+/* css global */
+*{
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+.container{
+    display: flex;
+}
+/* header */
+header{
+    background-color: violet;
+    height: 100px;
+}
+
+/* main */
+
+/* element table */
+
+#tableCt{
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;;
+    margin: 0;
+}
+#hColumn {
+    display: block;
+    background: none;
+    border-block-end: none;
+}
+.charts-css.column tbody tr:nth-of-type(10n+1) td{
+    background: none;
+    height: calc(100%*var(--size, 0.18));
+    font-size: 12px; 
+}
+#motion-effect-example-3 {
+    height: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#motion-effect-example-3 td .data {
+    transition-duration: 0.6s;
+    transform: scale(0);
+}
+
+#motion-effect-example-3 td:hover .data {
+    transform: scale(1);
+}
+/* footer */
