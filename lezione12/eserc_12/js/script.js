@@ -1,3 +1,4 @@
+
 let url = "https://jsonplaceholder.typicode.com/users/";
 let promise = fetch(url).then((get) => get.json());
 let arrU = [];
