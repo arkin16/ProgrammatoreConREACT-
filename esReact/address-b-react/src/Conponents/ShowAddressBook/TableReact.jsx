@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Table, Button, Stack} from "react-bootstrap";
+import {Table, Button, Stack,} from "react-bootstrap";
 import {InfoLg,PencilFill, Trash3Fill} from  "react-bootstrap-icons";
 import axios from "axios";
 
@@ -26,8 +26,9 @@ export default class TableReact extends Component {
   deleteUser = (u) => {
    axios.delete(localHost+u.id)
     .then(respose => this.getUsers())
-  }
+  };
 
+  
 
   render() {
     console.clear();
@@ -37,7 +38,7 @@ export default class TableReact extends Component {
         <thead>
           <tr>
             <th>#</th>
-            <th>Full Name</th>
+            <th>Name</th>
             <th>Username</th>
             <th>City</th>
             <th>Email</th>
@@ -55,7 +56,7 @@ export default class TableReact extends Component {
            <td  className="col-md-1">
            <Stack direction="horizontal" gap={3}>
             <Button variant="info" onClick={()=> this.props.detailsUser(u)}><InfoLg size="18"/></Button>
-            <Button variant="warning"><PencilFill size="18"/></Button>
+            <Button variant="warning" onClick={() => this.props.createFormPatch()}><PencilFill size="18"/></Button>
             <Button variant="danger" onClick={() => this.deleteUser(u)} ><Trash3Fill size="18"/></Button>
            </Stack>
            </td>
