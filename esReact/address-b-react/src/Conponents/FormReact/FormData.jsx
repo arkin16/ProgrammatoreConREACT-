@@ -12,7 +12,7 @@ const regexZipCode = /^((\d{5}-\d{4})|(\d{5})|([A-Z]\d[A-Z]\s\d[A-Z]\d))$/;
 const regexPhone = /^([+]?\d{1,2}[-\s]?|)\d{3}[-\s]?\d{3}[-\s]?\d{4}$/;
 const regexWebsite = /https?:\/\/(?:www\.)?([-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b)*(\/[\/\d\w\.-]*)*(?:[\?])*(.+)*/gi;
 
-console.log(regexWebsite[90]);
+
 export default class FormData extends Component {
   SignupSchema() {
     return Yup.object().shape({
@@ -29,20 +29,20 @@ export default class FormData extends Component {
         .matches(regexCity, "City is invalid ")
         .required("City is required"),
       street: Yup.string()
-       .matches(regexStreet, "Steet is invalid"),
+        .matches(regexStreet, "Steet is invalid"),
       zipcode: Yup.string()
-       .matches(regexZipCode, "Zipcode is invalid"),
+        .matches(regexZipCode, "Zipcode is invalid"),
       phone: Yup.string()
-       .matches(regexPhone, "Phone is invalid, Phone accept optional special characters and whitespace"),
+        .matches(regexPhone, "Phone is invalid, Phone accept optional special characters and whitespace"),
       website: Yup.string()
-       .matches(regexWebsite, "Website is invalid"),
+        .matches(regexWebsite, "Website is invalid"),
       company: Yup.string()
-       .matches(regexNameCompany, "Company is invalid"), 
+        .matches(regexNameCompany, "Company is invalid"), 
     });
   }
 
   handleSubmit = (data) => {
-    console.log(JSON.stringify(data, null, 2));
+    this.props.transformInputForm(data);
   };
 
   render() {
