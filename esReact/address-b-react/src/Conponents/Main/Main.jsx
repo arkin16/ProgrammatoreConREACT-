@@ -34,6 +34,11 @@ export default class Main extends Component {
     ],
     setDetailsU: null,
     setShowForm: null,
+
+    setShowButtonPost: true,
+    setShowButtonPatch: null,
+    setShowButtonPut: null,
+    tmpObj: {},
   };
 
   getUsers = () => {
@@ -47,6 +52,20 @@ export default class Main extends Component {
   postUsers = (obj) => {
     axios
       .post(localHost, obj)
+      .then((res) => this.getUsers())
+      .catch((error) => console.log(error));
+  };
+
+  fullUpdateUser = (obj) => {
+    axios
+      .put(localHost + this.state.tmpObj.id, obj)
+      .then((res) => this.getUsers())
+      .catch((error) => console.log(error));
+  };
+
+  updateUser = (obj) => {
+    axios
+      .patch(localHost + this.state.tmpObj.id, obj)
       .then((res) => this.getUsers())
       .catch((error) => console.log(error));
   };
@@ -67,34 +86,74 @@ export default class Main extends Component {
     });
   };
 
-  createForm = () => {
+  createForm = (obj, who) => {
     this.setState({ setShowForm: true });
+    if (who === "update") {
+      this.setState({
+        tmpObj: obj,
+        setShowButtonPatch: true,
+        setShowButtonPut: false,
+      });
+    } else {
+      this.setState({
+        tmpObj: obj,
+        setShowButtonPut: true,
+        setShowButtonPatch: false,
+      });
+    }
   };
 
-  transformData = (data) => {
+  transformData = (data, who) => {
     let inputForm = new AddressBook(data);
-    this.postUsers(inputForm);
+    if (who === "update") {
+      this.updateUser(inputForm);
+    }
+    if (who === "fullupdate") {
+      this.fullUpdateUser(inputForm);
+    } 
+    if(who == "post"){
+    
+      this.postUsers(inputForm);
+    }
   };
 
   render() {
-    console.log(this.state.setDetailsU);
+    console.log(
+      "patch",
+      this.state.setShowButtonPatch,
+      "put",
+      this.state.setShowButtonPut
+    );
     return (
       <>
         <FormData
           field={this.state.fields}
           transformInputForm={this.transformData}
+          setShowButtonPost={true}
+          setShowButtonPatch={null}
+          setShowButtonPut={null}
         />
         <TableReact
           getUsers={this.getUsers}
           users={this.state.users}
           deleteUser={this.deleteUser}
           detailsUser={this.details}
-          createFormPatch={this.createForm}
+          createForm={this.createForm}
         />
         {this.state.setDetailsU && (
           <DetailUserTable
             detailsU={this.state.setDetailsU}
             closeDetails={this.closeDetailsUser}
+          />
+        )}
+        {this.state.setShowForm && (
+          <FormData
+            field={this.state.fields}
+            transformInputForm={this.transformData}
+            setShowButtonPatch={this.state.setShowButtonPatch}
+            setShowButtonPut={this.state.setShowButtonPut}
+            
+
           />
         )}
       </>

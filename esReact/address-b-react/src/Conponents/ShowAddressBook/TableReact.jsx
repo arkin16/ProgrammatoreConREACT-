@@ -26,7 +26,7 @@ export default class TableReact extends Component {
         </thead>
         <tbody>
           {this.props.users.map((u, i) => (
-            <tr key={i}>
+            <tr key={u.id}>
               <td>{i + 1}</td>
               <td>{u.name}</td>
               <td>{u.username}</td>
@@ -42,7 +42,13 @@ export default class TableReact extends Component {
                   </Button>
                   <Button
                     variant="warning"
-                    onClick={() => this.props.createFormPatch()}
+                    onClick={() => this.props.createForm(u, "update") }
+                  >
+                    <PencilFill size="18" />
+                  </Button>
+                  <Button
+                    variant="danger"
+                    onClick={() => this.props.createForm(u)}
                   >
                     <PencilFill size="18" />
                   </Button>
