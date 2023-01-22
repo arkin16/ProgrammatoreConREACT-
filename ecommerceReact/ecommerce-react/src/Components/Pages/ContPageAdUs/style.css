@@ -1,0 +1,36 @@
+.marginy-1{
+ margin-top: .032rem !important;
+ margin-bottom: .032rem !important;
+}
+.marginx-1{
+ margin-left: .032rem !important ;
+ margin-right: .032rem !important;
+}
+
+.dash{
+ background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),url("/public/mont.png");
+ background-position: center;
+}
+
+.container-1{
+  margin-right : 0 !important;
+  margin-left : 0 !important;
+  padding-right : 0 !important;
+  padding-left : 0 !important;
+  max-width: none !important;
+}
+
+.col{
+
+  padding-right:0 !important; 
+  padding-left: 0 !important;
+}
+
+.setCard{
+  box-sizing:none;
+}
