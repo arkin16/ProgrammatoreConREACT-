@@ -5,7 +5,7 @@ const initialState = {
   statusRegister: "",
   loading: false,
   islogin: false,
-  userlog: {},
+  userlog: null,
   error: "",
 };
 
@@ -66,7 +66,7 @@ const sign_in_upSlice = createSlice({
     [loginUser.fulfilled]: (state, action) => {
       state.loading = false;
       state.islogin = true;
-      state.userlog = action.data;
+      state.userlog = action.payload;
     },
   },
 });
