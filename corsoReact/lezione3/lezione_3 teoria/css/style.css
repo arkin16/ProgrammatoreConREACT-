@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-size: 1rem;
+}
+
+/* Selettore universale */
+* {
+    color: #24c0bd;
+}
+
+/* Selettore di tipo */
+h1 {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* selettore dei discendenti */
+div p {
+    color: violet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    line-height: 3em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-shadow: 5px 5px 5px #000;
+}
+/* selettore dei figli */
+div > p {
+    font-size: 1.5em
+}
+
+h1, a {
+    text-decoration: line-through;
+}
+
+/* a {
+    text-decoration: line-through;
+} */
+
+
+/* Font in locale nella cartella Font */
+@font-face {
+    font-family: 'Dancing Script';
+    src: url(../font/DancingScript-Regular.ttf) ;
+}
+
+p {
+    font-family: Dancing Script;
+}
+
+/* Ci colleghiamo direttamente a google font */
+/* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'); */
+
+h1 {
+    font-family: Indie Flower;
+}
+
+/* selettore id */
+#etichettaid {
+    color: yellow;
+    font-family: Dancing Script;
+}
+
+/* selettore class */
+.etichettaclass {
+    color: brown;
+    font-family: Dancing Script;
+}
+
+p + h3 {
+    color: purple;
+}
+
+h1[title] {
+    text-decoration: underline;
+}
+
+h1[title="Lorem Ipsum"] {
+    color: black;
+}
+
+h3:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+div:first-child {
+    background-color: lightblue;
+}
+
+div:not(:first-child) {
+    background-color: lightgreen;
+}
+
+h1[title="Lorem Ipsum"]::before {
+    content: " --- ";
+    color: gray;
+}
+
+h1[title="Lorem Ipsum"]::after {
+    content: " --- ";
+        color: gray;
+}

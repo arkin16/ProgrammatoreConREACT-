@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "name": "Giuseppe",
+      "username": "Vediniabc",
+      "email": "example@example.com",
+      "phone": "+1 (497) 251-6666",
+      "website": "https://www.abc.com",
+      "id": 3
+    },
+    {
+      "name": "Mario Rossi",
+      "username": "Mariolino",
+      "email": "m.rossi@gmail.com",
+      "phone": "123456789",
+      "website": "www.mrossi.com",
+      "id": 5
+    },
+    {
+      "name": "Marcello",
+      "username": "admin",
+      "email": "example@example.com",
+      "phone": "+1 (819) 152-4354",
+      "website": "https://www.rociqujosowab.co",
+      "id": 6
+    },
+    {
+      "name": "Mario",
+      "username": "admin",
+      "email": "example@example.com",
+      "phone": "+1 (819) 152-4354",
+      "website": "https://www.rociqujosowab.co",
+      "id": 7
+    }
+  ]
+}

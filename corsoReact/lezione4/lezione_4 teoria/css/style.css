@@ -1,0 +1,106 @@
+body {
+    background-color: lightgray;
+    /* background-image: url(../img/css-background-pattern-generator.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+.container {
+    background-color: #fff;
+    /* height: 100px; */ /* Sconsigliata */
+    width: 1000px; /* Dim. fisse sconsigliate */
+    height: 600px;
+    /* margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-right: 20px; */
+    margin: 20px auto;
+    /* text-align: justify;*/
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: red; */
+    /* border: 3px solid red;
+    border-radius: 15px; */
+    /* outline: 5px solid green;
+    outline-offset: 10px; */
+    padding: 10px;
+    /* box-sizing: border-box; */
+    box-shadow: 10px 10px 10px 10px #606060;
+}
+
+.container .box1 {
+    background-color: lightcoral;
+    width: 500px;
+    height: 250px;
+    overflow: auto;
+    text-align: justify;
+    float: left;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 1;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.container .box1 ul {
+    list-style: none;
+}
+
+.container .box2 {
+    background-color: lightskyblue;
+    background-image: url(../img/sta-je-css.png);
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    overflow: auto;
+    /* word-break: break-all; */
+    border: 2px solid black;
+    padding: 10px;
+    text-align: justify;
+    float: left;
+    box-sizing: border-box;
+}
+
+.container .box2 a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.container .box2 a:link {
+    color: #606060;
+}
+
+.container .box2 a:visited {
+    color: #000000;
+}
+
+.container .box2 a:active {
+    color: #fff;
+}
+
+.container .box2 a:hover {
+    background-color: orange;
+    color: #606060;
+    text-decoration: none;
+}
+
+.container table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+table td {
+    border: 1px solid black;
+    
+}
+
+table tr:hover {
+    background-color: #606060;
+    color: #fff;
+    
+}

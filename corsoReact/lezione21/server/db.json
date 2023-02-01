@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "email": "example@example.com",
+      "password": "$2a$10$xBPbGxBCnAK9GI.ka0u5A.bH/BO79eKvWzZMqSwQnnH5fbfZtDcxS",
+      "firstName": "Umberto",
+      "lastName": "Emanuele",
+      "city": "Roma",
+      "age": "44",
+      "id": 1
+    }
+  ],
+  "posts": [
+    {
+      "date": "13/1/2023 - 11:20:13",
+      "txt": "Commodi lorem porro ",
+      "userId": 1,
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+Dovrai creare un file js e intregrarlo in un file di progetto 
+(fai attenzione alla giusta creazione delle cartelle):
+
+Richiamare la data attuale
+Mostrarla in una pagina HTML
+Mostrare elementi singoli della data
+Creare un sistema per la formattazione in formato europeo
+Mostrare la data formattata in una pagina HTML
+
+Devi creare una funzione che dato un certo budget di partenza 
+possa essere scalato progressivamente.
+Devi creare due messaggi: uno a metà del budget esaurito e uno quasi alla fine del budget.
+Ambedue i messaggi devono avvisare della situazione corrente.
+Devi creare un output che mostri progressivamente il budget che scala.
+
+Creare un albero di n lungezza sfruttanto i cicli for annidati
+l=9
+'----*----'
+'---***---'
+'--*****--'
+'-*******-'
+'*********'

@@ -1,0 +1,203 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
+    background-position: center center;
+    padding: 15px;
+    line-height: 1.5;
+    font-size:1.1em;
+    box-sizing: border-box;
+}
+
+hr {
+    display: none;
+}
+/* HEADER */
+header {
+    background: rgb(0,228,255);
+    background: linear-gradient(180deg, rgba(0,228,255,1) 0%, rgba(0,127,142,1) 100%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    padding: 2em;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+}
+
+header img {
+    margin-bottom: 15px;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header span {
+    text-decoration: underline;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a::before {
+    content: '=> '
+}
+
+header nav a::after {
+    content: ' <='
+}
+/* MAIN */
+
+main {
+    background-color: #fff;
+    padding: 2em;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+h1 + p {
+    color: #a4a4a4;
+}
+
+p, ul, ol, section {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: bold;
+    color: #7e0041;
+}
+
+ul, ol {
+    margin-left: 1.6em;
+}
+
+code {
+    background-color: #d1d1d1;
+    border: 1px solid #595959;
+    border-radius: 5px;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+
+section {
+    background-color: #d1d1d1;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section h2 {
+    text-align:  center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* TABELLE */
+table {
+    margin-bottom: 2em;
+}
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+
+thead tr {
+    background-color: #6262ff;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #d1d1d1;
+}
+
+tbody tr:nth-child(2n+2) {
+    background-color: #eaeaea;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #6262ff;
+}
+/* FORM */
+
+section form input {
+    padding:5px;
+    border: 0;
+    border-bottom: 1px dashed #595959;
+    width: 70%;
+}
+
+section form button {
+    background-color: #6262ff;
+    padding:5px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    width: 25%;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+aside h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+aside div {
+    background-color: #d1d1d1;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #595959;
+}
+
+aside div p:last-child {
+    font-size: 0.8em;
+    text-align: right;
+}
+
+/* .fa-tag:before {
+    content: "\f02b"; }
+ */
+/* FOOTER */
+footer {
+    background: rgb(0, 58, 64);
+    background: linear-gradient(180deg, rgb(0, 58, 64) 0%, rgb(0, 24, 27) 100%);
+    box-shadow: 0 3px 3px #444;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+}
+
+footer a:link {
+    color: red;
+}

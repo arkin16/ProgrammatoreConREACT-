@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "city": "Miami",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 2,
+      "name": "Mario Rossi Graham",
+      "username": "mariorossi",
+      "email": "mr@april.biz",
+      "city": "London",
+      "phone": "1-770-736-8031",
+      "website": "mariorossi.org"
+    }
+  ]
+}

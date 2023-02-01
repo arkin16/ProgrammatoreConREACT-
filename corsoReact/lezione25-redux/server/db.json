@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "lastName": "Doe",
+      "city": "San Francisco"
+    },
+    {
+      "id": 2,
+      "name": "Mason",
+      "lastName": "Smith",
+      "city": "Chicago"
+    },
+    {
+      "name": "Josephine Moody",
+      "lastName": "Hopper",
+      "city": "Paris",
+      "id": 4
+    }
+  ]
+}

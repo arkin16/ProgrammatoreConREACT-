@@ -1,0 +1,14 @@
+Scopo di questo esercizio è il corretto utilizzo delle variabili, 
+comprensione dei tipi di dato e dei primi operatori. 
+L’esercizio servirà anche per consolidare la tecnica di concatenazione.
+
+Dovrai creare un file js e integrarlo in un file di progetto 
+(fai attenzione alla giusta creazione delle cartelle).
+
+Dovrai impostare strutture var, let, const
+Creare un esempio per dimostrare la differenza fondamentale tra var/let e const
+Assegna diversi tipi di dati alle tue variabili
+Utilizza anche un tipo booleano e concatenalo in una stringa o ad una variabile di tipo stringa
+Esegui delle operazioni di somma, sottrazione, moltiplicazione, divisione.
+Verificate se un numero è pari o dispari.
+Mostrare con direttive di output il risultato degli script

@@ -1,0 +1,57 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    width: 70%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.box1 { 
+    background-color: lightcoral;
+    width: 250px;
+    /* transform: translate(0, 100px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(0.8, 0.9); */
+    /* transform: skew(15deg, 15deg); */
+    /* transform: perspective(200px) translateZ(25px); */
+    /* transform: perspective(200px) rotate(45deg); */
+    /* transform: rotate3d(2.5, 1.2, 2.3, 45deg); */
+
+    transition-property: width, background-color;
+    transition-duration: 1s, 3s;
+    transition-timing-function: cubic-bezier(.09,1.1,.85,.08), ease-in;
+    transition-delay: 1s;
+}
+
+.box1:hover {
+    width: 500px;
+    /* transform: scale(2); */
+    background-color: #954e4e;
+    
+}
+
+@keyframes pallina {
+    from { transform: translateY(500px)}
+    30%  { transform: scale(0.8)}
+    65%  { background-color: #954e4e}
+    to   { transform: translateY(0)}
+}
+
+.box2 { 
+    width: 250px;
+    height: 250px;
+    background-color: #000;
+    border-radius: 50%;
+    /* animation-name: pallina;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    -moz-animation: pallina 3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite alternate-reverse;
+    -webkit-animation: pallina 3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite alternate-reverse;
+    -o-animation: pallina 3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite alternate-reverse;
+    animation: pallina 3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite alternate-reverse;
+}
+

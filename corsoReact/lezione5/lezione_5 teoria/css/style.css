@@ -1,0 +1,146 @@
+body {
+    background-color: lightblue;
+    font-size: 1rem;
+}
+
+.container {
+    width: 70%;
+    min-height: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: content-box;
+    /* position: relative; */
+}
+
+.container header {
+    background-color:#bcfcff;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a:link {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #000;
+    color: #bcfcff;
+}
+
+div {
+    /* width: 50%; */
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+div.box1 {
+    background-color: lightgrey;
+    float:left;
+    width: 50%;
+}
+
+div img {
+    width:150px;
+    margin: 5px;
+}
+
+div.box1 img {
+    float:right;
+}
+
+div.box2 img {
+    float:left;
+    
+}
+
+div.box2 {
+    background-color: lightcoral;
+    float:left;
+    width: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: black;
+    min-height: 800px;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+    clear: both;
+}
+
+footer a:link, footer a:visited {
+    color: #fff;
+}
+
+.position {
+    width: 100px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+    top: -42px;
+    left: 10px;
+    padding: 0.5;
+    border: 1px solid #595959;
+    z-index: 11;
+}
+
+h1 {
+    position: relative;
+    z-index: 12;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between
+}
+
+.flex1 {
+    width: 250px;
+    
+    background-color: lightgreen;
+}
+
+.flex2 {
+    width: 250px;
+    flex-grow: 2;
+    background-color: lightcyan;
+}
+
+.flex3 {
+    width: 250px;
+    
+    background-color: lightpink;
+}
+.flex4 {
+    width: 300px;
+    background-color: lightgoldenrodyellow;
+}
+
+.flex5 {
+    width: 300px;
+    background-color: lightseagreen;
+}
+
+.flex6 {
+    width: 300px;
+    background-color: lightslategray;
+}

@@ -1,0 +1,142 @@
+body {
+    background-color: lightblue;
+}
+
+.container { 
+    width: 70%;
+    /* height: 900px; */
+    background-color: #fff;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.box1 { background-color: lightcoral;}
+.box2 { background-color: lightgoldenrodyellow;}
+.box3 { background-color: lightgray;}
+.box4 { background-color: lightgreen;}
+.box5 { background-color: lightpink;}
+.box6 { background-color: lightseagreen;}
+
+/* Flex Layout */
+
+.container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.container div { 
+    width: 30%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container { 
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container div { 
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container div { 
+        width: 50%;
+    }
+
+    .container p {
+        color: red;
+    } 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container div { 
+        width: 46%;
+        margin: 2%;
+    }
+
+    .container p {
+        color: green;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container div { 
+        width: 30%;
+        border: 1px solid black;
+    }
+    .container p {
+        color: yellow;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container div { 
+        width: 25%;
+    }
+
+    .container p {
+        color: blue;
+    }
+}
+
+/* Grid Layout */
+
+/* .container { 
+    display: grid;
+    grid-template-rows: repeat(4, 400px); ;
+    grid-template-columns: 23% 36% 1fr;
+    gap: 20px;
+    justify-content:space-around;
+    align-content: space-around;
+}
+
+.box1 { 
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row: 1 / 4;
+}
+
+.box2 { 
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-column: 2 / 4;
+}
+
+.box3 { 
+    width: 250px;
+    grid-area: 2/2/4/4;
+    justify-self: end;
+    align-self: end;
+} */
+
+
+ /* Grid Layout con Grid Area */
+
+/*  div.box1 { grid-area: box1; border: 1px solid black;}
+ div.box2 { grid-area: box2; border: 1px solid black;}
+ div.box3 { grid-area: box3; border: 1px solid black;}
+ div.box4 { grid-area: box4; border: 1px solid black;}
+ div.box5 { grid-area: box5; border: 1px solid black;}
+ div.box6 { grid-area: box6; border: 1px solid black;}
+
+ .container { 
+    display: grid;
+    gap: 20px;
+    border: 1px solid black;
+    grid-template-areas: "box1 box2 box2"
+                         "box1 box3 box3"
+                         "box1 box3 box3"
+                         "box4 box5 ."
+                         "box6 . .";
+} */
+

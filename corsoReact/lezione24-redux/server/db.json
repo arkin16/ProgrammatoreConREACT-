@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "email": "teqipaki@mailinator.com",
+      "password": "$2a$10$P4a6B54fsl.0uyAchnA2kOZ1wy6shmUlTQst9ih3frpk0OPuJygZ2",
+      "firstname": "Mufutau",
+      "lastname": "Madden",
+      "age": 4,
+      "id": 1
+    },
+    {
+      "email": "tytadon@mailinator.com",
+      "password": "$2a$10$KwNNDxIQ/lF7Lgn1Xhce3.vabBuB2YltcK01gQ1nidGszm1.th9f6",
+      "firstname": "Barclay",
+      "lastname": "Barron",
+      "age": 55,
+      "id": 2
+    }
+  ],
+  "contacts": [
+    {
+      "fullname": "Candice Henry",
+      "city": "Ut quam nesciunt qu",
+      "email": "pafyf@mailinator.com",
+      "phone": "+1 (262) 316-8864",
+      "id": 1
+    }
+  ]
+}

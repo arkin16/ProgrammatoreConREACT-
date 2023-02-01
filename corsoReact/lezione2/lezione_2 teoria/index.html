@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tabella</h1>
+    <table border="1">
+        <caption><strong>Mia Tabella</strong></caption>
+        <tr>
+            <th rowspan="2">abc</th>
+            <th>abc</th>
+            <th>abc</th>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <th colspan="3">abc</th>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption><strong>Mia Tabella</strong></caption>
+        <thead>
+            <tr>
+                <th>abc</th>
+                <th>abc</th>
+                <th>abc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">abc</td>
+                <td>abc</td>
+                <td>abc</td>
+            </tr>
+            <tr>
+
+                <td>abc</td>
+                <td>abc</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">abc</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr />
+    <h1>Form</h1>
+    <form action="miapaginalatoserver.php" method="post">
+        <fieldset>
+            <legend>Mio Form</legend>
+            <table>
+            <tr>
+                <td><label for="myname">Nome:</label></td>
+                <td><input type="text" id="myname" name="myname" placeholder="Mario..." minlength="3" required autofocus></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+               <td> <input type="email" id="email" name="email" placeholder="example@example.ext..." required></td>
+            </tr>
+            <tr>
+                <td><label for="city">Città:</label></td>
+                <td>
+                    <select name="city" id="city">
+                        <optgroup label="Centro Italia">
+                            <option value="Roma">Roma</option>
+                            <option value="Pescara">Pescara</option>
+                        </optgroup>
+                        <optgroup label="Nord Italia">
+                            <option value="Milano">Milano</option>
+                            <option value="Udine">Udine</option>
+                        </optgroup>
+                        <optgroup label="Sud Italia">
+                            <option value="Napoli">Napoli</option>
+                            <option value="Palermo">Palermo</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+               <td> <label for="password">Password:</label></td>
+               <td> <input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+               <td> <label for="data">Data di nascita:</label></td>
+               <td> <input type="date" id="data" name="data" required></td>
+            </tr>
+            <tr>
+               <td> <label for="phone">Telefono:</label></td>
+               <td> <input type="tel" id="phone" name="phone" placeholder="+39 123.456789" required></td>
+            </tr>
+            <tr>
+               <td> <label for="age">Età:</label></td>
+               <td> <input type="number" id="age" name="age" value="18" readonly required></td>
+            </tr>
+            <tr>
+                <td>Sesso:</td>
+               <td> <input type="radio" id="uomo" name="sesso" value="uomo">
+                <label for="uomo">Uomo</label>
+                <input type="radio" id="donna" name="sesso" value="donna">
+                <label for="donna">Donna</label>
+                <input type="radio" id="altro" name="sesso" value="altro">
+                <label for="altro">Altro</label></td>
+            </tr>
+            <tr>
+                <td>Materie Preferite:</td>
+                <td><input type="checkbox" id="html" name="html" value="html" checked>
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="css" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                <label for="javascript">Javascript</label></td>
+            </tr>
+            <tr>
+                <td>Note:</td>
+                <td><textarea id="note" name="note" rows="10" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" disabled>Inva dati</button>
+                    <button type="reset">Pulisci campi</button>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11883.13859049518!2d12.487324897797315!3d41.875979583209656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRoma%20RM!5e0!3m2!1sit!2sit!4v1669896101830!5m2!1sit!2sit" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <audio controls autoplay>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls poster="/images/w3html5.gif">
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <picture>
+        <source media="(min-width:980px)" srcset="img_pink_flowers.jpg">
+        <source media="(min-width:720px)" srcset="img_white_flower.jpg">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "users": [],
+    "todos": [
+        {"id": 1, "todo": "Primo Todo", "completed": ""},
+        {"id": 2, "todo": "Secondo Todo", "completed": ""},
+        {"id": 2, "todo": "Terzo Todo", "completed": ""}
+    ]
+}

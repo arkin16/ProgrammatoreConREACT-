@@ -1,0 +1,9 @@
+L'esercizio ha come scopo la creazione di layout monodimensionali (con Flex). Verrà utilizzato il file «articolo.html», 
+già reso responsive nel comportamento di alcuni elementi durante una precedente esercitazione.
+
+Layout monodimensionale con Flex: la pagina dovrà essere più fruibile schermi medi e grandi,
+secondo quanto richiesto dal file grafico «layout-flex.png» e «layout-flex-dettaglio.png». Più precisamente:
+
+Logo e payoff dell’header affiancati da 500px in su
+I 3 box interni all'aside saranno affiancati da 500px in su, ma saranno rimessi verticali da 800px in poi
+L’aside andrà affiancata lateralmente da 800px in su

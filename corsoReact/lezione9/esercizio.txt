@@ -1,0 +1,13 @@
+Scopo di questo esercizio è il corretto utilizzo delle funzioni, 
+in particolari dei parametri/argomenti assegnati e la corretta definizione e invocazione delle funzioni.
+
+Dovrai creare un file js e intregrarlo in un file di progetto 
+(fai attenzione alla giusta creazione delle cartelle).
+
+Dovrai impostare una funzione che calcola un range di anni.
+Imposta una funzione freccia e invocala, mostra un output
+Definisci una funzione all’interno di un’altra funzione
+Utilizza gli operatori che conosci, in particolare quelli di comparazione
+Crea funzioni che manipolano un array
+
+N.B. Le funzioni devono essere definite, invocate e mostrare il risultato in output (anche soltanto in console).

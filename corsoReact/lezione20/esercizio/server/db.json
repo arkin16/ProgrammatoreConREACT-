@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "email": "mrossi@mail.com",
+      "password": "$2a$10$zUQPnN9Bo4sk7Q/LKwzoLuO2pa192dTogAy8NQvwErF4Ke/kxqqPi",
+      "firstname": "Mario",
+      "lastname": "Rossi",
+      "city": "San Francisco",
+      "age": 49,
+      "id": 1
+    }
+  ]
+}

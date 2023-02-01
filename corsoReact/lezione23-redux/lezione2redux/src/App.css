@@ -1,0 +1,5 @@
+.completed {
+    color: red !important;
+    text-decoration: line-through !important;
+    font-weight: bold !important;
+}

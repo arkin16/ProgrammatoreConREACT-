@@ -1,0 +1,130 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+hr {
+    display: none;
+}
+/* HEADER */
+header {
+    background-color: #62a9ff;
+    font-family: Raleway;
+    text-align: center;
+    color: #fff;
+    padding: 1.5em;
+    border-bottom: 3px solid #003980;
+}
+
+header h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+header h1 span {
+    background-color: #fff;
+    color: #62a9ff;
+}
+
+header h2 {
+    color: #000;
+    font-variant: small-caps;
+}
+/* MAIN */
+main section h2 {
+    font-size: 1.3em;
+    text-align: center;
+    color: #62a9ff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+main section h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Raleway;
+}
+
+/* ELEMENTI NEL MAIN */
+main figure {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+main figure img {
+    border: 10px solid #fff;
+    outline: 1px solid #d5d5d5;
+}
+
+blockquote {
+    background-color:#d5d5d5;
+    text-align: center;
+    font-style: italic;
+    border-radius: 15px;
+    margin: 1em;
+    padding: 1em;
+}
+
+b {
+    color: #000;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(255, 106, 0);
+}
+
+strong {
+    color: #62a9ff;
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 2.5em;
+}
+
+mark {
+    background-color: #62a9ff;
+    color: #fff;
+}
+
+address {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+div p, h3, dl, dd {
+    margin: 1em;
+}
+
+section {
+    border-bottom: 1px dashed #353535;
+    margin: 1em;
+}
+/* FOOTER */
+
+footer {
+    border-top: 10px solid #003980;
+    background-color: #353535;
+    color: #fff;
+    text-align: center;
+    font-size: 0.7em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    padding: 0 1em;
+    
+}
+
+footer kbd {
+    font-style: italic;
+    font-weight: bold;
+    color: yellow;
+}
+
+footer small {
+    color: #8d8d8d;
+}
