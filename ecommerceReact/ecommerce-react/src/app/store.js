@@ -3,6 +3,7 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage"; 
 import sign_in_upSlice from "../feature/sign_in-up/sign_in_upSlice";
+import thunk from "redux-thunk";
 
 const persistConfig = {
   key: "root",
@@ -17,6 +18,7 @@ const persistedReducer = persistReducer(persistConfig, reducers);
 
 const store = configureStore({
   reducer:persistedReducer,
+  middleware:[thunk],
 });
 
 const persistor = persistStore(store);

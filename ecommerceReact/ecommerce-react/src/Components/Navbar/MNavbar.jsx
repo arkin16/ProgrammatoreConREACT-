@@ -2,11 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { HouseDoor } from "react-bootstrap-icons";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import sign_in_upSlice from "../../feature/sign_in-up/sign_in_upSlice";
+
+
 
 export default function MNavbar() {
   const userlog = useSelector((state) => state.sign_in_up.userlog);
-
+  const dispacth = useDispatch();
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -34,7 +37,7 @@ export default function MNavbar() {
                   <NavLink to="/user" className={"dropdown-item"}>
                     My Account
                   </NavLink>
-                  <NavLink to="/" className={"dropdown-item"}>
+                  <NavLink to="/" className={"dropdown-item"} onClick={() => dispacth(sign_in_upSlice.logOut())}>
                     Logout
                   </NavLink>
                 </NavDropdown>

@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import storage from "redux-persist/lib/storage";
 import axios from "axios";
 
 const initialState = {
@@ -43,7 +44,12 @@ export const loginUser = createAsyncThunk("login/loginUser", (obj) => {
 const sign_in_upSlice = createSlice({
   name: "sign_in_up",
   initialState: initialState,
-  reducers: {},
+  reducers: {
+    logOut(state) {
+      storage.removeItem("persist:root");
+      state.userlog = null;
+    },
+  },
   extraReducers: {
     [registerUser.pending]: (state) => {
       state.loading = true;
