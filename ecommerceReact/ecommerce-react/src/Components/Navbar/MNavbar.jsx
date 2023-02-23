@@ -1,11 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import {
+  Button,
+  Container,
+  Form,
+  Nav,
+  Navbar,
+  NavDropdown,
+} from "react-bootstrap";
 import { HouseDoor } from "react-bootstrap-icons";
 import { useDispatch, useSelector } from "react-redux";
-import sign_in_upSlice from "../../feature/sign_in-up/sign_in_upSlice";
-
-
+import { logOut } from "../../feature/sign_in-up/sign_in_upSlice";
+import "./style.css";
 
 export default function MNavbar() {
   const userlog = useSelector((state) => state.sign_in_up.userlog);
@@ -19,10 +25,20 @@ export default function MNavbar() {
             <HouseDoor /> React Bootstrap
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto" />
+            <Form className="d-flex">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+              />
+              <Button className="me-3" variant="outline-success">Search</Button>
+            </Form>
             {!userlog && (
-              <Nav>
+              <Nav className="me-3">
                 <NavLink to="/login" className={"nav-link"}>
                   Login
                 </NavLink>
@@ -32,12 +48,16 @@ export default function MNavbar() {
               </Nav>
             )}
             {userlog && (
-              <Nav>
+              <Nav className="me-3">
                 <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                   <NavLink to="/user" className={"dropdown-item"}>
                     My Account
                   </NavLink>
-                  <NavLink to="/" className={"dropdown-item"} onClick={() => dispacth(sign_in_upSlice.logOut())}>
+                  <NavLink
+                    to="/"
+                    className={"dropdown-item"}
+                    onClick={() => dispacth(logOut())}
+                  >
                     Logout
                   </NavLink>
                 </NavDropdown>

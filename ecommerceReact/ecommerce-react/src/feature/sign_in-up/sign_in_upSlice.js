@@ -77,4 +77,5 @@ const sign_in_upSlice = createSlice({
   },
 });
 
+export const {logOut} = sign_in_upSlice.actions;
 export default sign_in_upSlice.reducer;

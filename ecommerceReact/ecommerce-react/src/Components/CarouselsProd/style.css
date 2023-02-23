@@ -1,0 +1,7 @@
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    display: flex !important;
+}
+.carousel-indicators{
+    position: unset !important;
+    margin-bottom: 0rem !important;
+}
