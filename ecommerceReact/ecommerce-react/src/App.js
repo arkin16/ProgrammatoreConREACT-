@@ -8,6 +8,7 @@ import UsersRegistered from "./Components/Pages/ContPageAdUs/PageAdmin/UsersRegi
 import PageUser from "./Components/Pages/ContPageAdUs/PageUser/PageUser";
 import Products from "./Components/Pages/Products/Products";
 import ShoppingCart from "./Components/Pages/ShoppingCart/ShoppingCart";
+import ShowProduct from "./Components/Pages/ShowProduct/ShowProduct";
 import Signin from "./Components/Pages/Signin/Signin";
 import Signup from "./Components/Pages/Signup/Signup";
 
@@ -18,6 +19,7 @@ function App() {
         <MNavbar />
         <Routes>
           <Route path="/" element={<Products />} />
+          <Route path="/showproducts" element={<ShowProduct />}/>
           <Route path="/shoppingcart" element={<ShoppingCart />} />
           <Route path="/register" element={<Signup />} />
           <Route path="/login" element={<Signin />} />
