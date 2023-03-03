@@ -22,7 +22,7 @@ export default function MNavbar() {
         {console.log(userlog)}
         <Container fluid>
           <NavLink to="/" className={"navbar-brand"}>
-            <HouseDoor /> React Bootstrap
+            <HouseDoor /> .CoMmercial
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 

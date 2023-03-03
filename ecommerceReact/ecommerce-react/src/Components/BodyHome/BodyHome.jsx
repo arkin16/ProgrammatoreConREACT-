@@ -1,5 +1,6 @@
 import React from "react";
 import CardProd from "../CardProd/CardProd";
+import "./style.css";
 
 export default function BodyHome() {
   const tmp = [1, 2, 3, 4, 5];

@@ -45,7 +45,6 @@ export default function CaroselsProd() {
                           style={{
                             padding: "5px",
                             margin: "5px",
-                            border: "3px solid black ",
                             borderEndStartRadius: "60px 20px",
                           }}
                         >
